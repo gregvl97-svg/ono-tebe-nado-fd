@@ -1,5 +1,4 @@
 .header {
-  height: 293px;
   padding: 95px 50px 96px;
   display: grid;
   grid-template-columns: 1fr min-content 1fr;
@@ -113,12 +112,11 @@
 }
 
 .cover__title {
-  position: relative;
   margin-top: 165px;
 }
 
 .aligned-text {
-  position: absolute;
+  display: block;
   font-size: 100px;
   font-weight: 700;
   line-height: 115px;
@@ -126,19 +124,18 @@
 }
 
 .aligned-text_left {
-  left: 0;
-  top: 0;
+  text-align: left;
 }
 
 .aligned-text_center {
-  left: 50%;
-  transform: translateX(calc(-50% + 15px));
-  top: 135px;
+  text-align: center;
+  margin-top: 20px;
+  padding-left: 33px;
 }
 
 .aligned-text_right {
-  right: 0;
-  top: 270px;
+  text-align: right;
+  margin-top: 20px;
   transform: translateX(30px);
 }
 
@@ -188,6 +185,7 @@
 .lots__card-list {
   display: flex;
   gap: 25px;
+  flex-wrap: wrap;
   align-items: stretch;
   list-style: none;
   margin: 0;
@@ -333,7 +331,6 @@
 
 .footer__menu {
   text-align: center;
-  margin-left: -18px;
 }
 
 .footer__menu-list {
