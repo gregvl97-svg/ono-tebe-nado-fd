@@ -51,7 +51,7 @@
 }
 
 .header__link_active {
-  border-bottom: none;
+  text-decoration: none;
 }
 
 .header__logo {
@@ -64,14 +64,17 @@
   width: 148px;
 }
 
-.header__address {
+.contacts {
+  font-style: normal;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.header .contacts {
   justify-self: end;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  font-style: normal;
-  font-size: 18px;
-  line-height: 24.3px;
   max-width: 240px;
 }
 
@@ -317,12 +320,12 @@
   font-size: 18px;
 }
 
-.footer__contacts {
+.footer .contacts {
   max-width: 260px;
   line-height: 1.35;
 }
 
-.footer__contacts a {
+.footer .contacts a {
   text-decoration: underline;
   text-decoration-thickness: 1px;
   text-underline-offset: 4px;
